@@ -19,7 +19,7 @@ const List = () => {
         setList(e.target.value)
     }
 
-    const todoDelete = (e:React.MouseEvent<HTMLElement>): void => {
+    const todoDelete = (e:React.MouseEvent<HTMLElement>) => {
         const newList = [...todo];
         newList.splice(Number(e.currentTarget.getAttribute('value')), 1);
         setTodo(newList);
